@@ -1,9 +1,9 @@
 {% extends "pyramid_blogr:templates/layout.jinja2" %}
 
 {% block content %}
-    <h1>{{ entry.title }}</h1>
+    <h1 class="secondary">{{ entry.title }}</h1>
     <hr/>
-    <p>{{ entry.body }}</p>
+    <p class="blog-post">{{ entry.body }}</p>
     <hr/>
     <p>Created <strong title="{{ entry.created }}">
         {{ entry.created_in_words }}</strong> ago</p>
